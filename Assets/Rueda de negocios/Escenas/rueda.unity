@@ -2009,7 +2009,6 @@ GameObject:
   - component: {fileID: 1316601996}
   - component: {fileID: 1316601995}
   - component: {fileID: 1316601994}
-  - component: {fileID: 1316601998}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2099,25 +2098,6 @@ RectTransform:
   m_AnchoredPosition: {x: 393, y: 192}
   m_SizeDelta: {x: 786, y: 384}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1316601998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316601993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4821492c77d46fb49a211e69609e3acc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Banner1: {fileID: 2091180638}
-  Banner2: {fileID: 341370045}
-  Banner3: {fileID: 1952019607}
-  Banner4: {fileID: 45153129}
-  Banner5: {fileID: 1923767825}
-  Banner6: {fileID: 1988940798}
-  Banner7: {fileID: 1481743714}
 --- !u!1 &1436159324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,6 +3076,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952019605}
   m_CullTransparentMesh: 0
+--- !u!1 &1954784553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954784555}
+  - component: {fileID: 1954784554}
+  m_Layer: 0
+  m_Name: Codigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1954784554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954784553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4821492c77d46fb49a211e69609e3acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Banner1: {fileID: 2091180638}
+  Banner2: {fileID: 341370045}
+  Banner3: {fileID: 1952019607}
+  Banner4: {fileID: 45153129}
+  Banner5: {fileID: 1923767825}
+  Banner6: {fileID: 1988940798}
+  Banner7: {fileID: 1481743714}
+--- !u!4 &1954784555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954784553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.800003, y: -0.099998474, z: 21.42615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1958006627
 GameObject:
   m_ObjectHideFlags: 0

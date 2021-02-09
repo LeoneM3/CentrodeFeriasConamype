@@ -4,10 +4,11 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 using System;
 
-public class baseMostrarBanners : MonoBehaviour
+public class baseScript1 : MonoBehaviour
 {
     
 
+    
 
     public RawImage[] GetChildImagenes(string ruta) {
          RawImage[] imagenes = {};
