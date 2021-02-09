@@ -5897,6 +5897,56 @@ Transform:
   m_Father: {fileID: 570342967}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1688507363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1688507365}
+  - component: {fileID: 1688507364}
+  m_Layer: 0
+  m_Name: Codigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1688507364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688507363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f0706cc10b6ea42adb2cf91c0867a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  banner1: {fileID: 1986106996}
+  logo1: {fileID: 1742349537}
+  logoexpomype1: {fileID: 1101247991}
+  logoexpomype2: {fileID: 213957111}
+  recepcionista: {fileID: 646394791}
+  nombre_logo: {fileID: 750698922}
+  banderin1: {fileID: 1528712330}
+--- !u!4 &1688507365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688507363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.800003, y: -0.099998474, z: 21.42615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1707843689
 GameObject:
   m_ObjectHideFlags: 0

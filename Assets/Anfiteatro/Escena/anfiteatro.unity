@@ -2022,6 +2022,54 @@ Transform:
   m_Father: {fileID: 1061077539}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1559362402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559362404}
+  - component: {fileID: 1559362403}
+  m_Layer: 0
+  m_Name: Codigo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1559362403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559362402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99a83c5d1966854299732b585684fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BannerIzq: {fileID: 1879707630}
+  BannerDer: {fileID: 850514788}
+  BannerFondoDer: {fileID: 1053262320}
+  BannerFondoIzq: {fileID: 618444711}
+  PantallaFondo: {fileID: 895316969}
+--- !u!4 &1559362404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559362402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.800003, y: -0.099998474, z: 21.42615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581216979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,7 +2082,6 @@ GameObject:
   - component: {fileID: 1581216982}
   - component: {fileID: 1581216981}
   - component: {fileID: 1581216980}
-  - component: {fileID: 1581216984}
   m_Layer: 5
   m_Name: Icono Estas Aqui
   m_TagString: Untagged
@@ -2125,23 +2172,6 @@ RectTransform:
   m_AnchoredPosition: {x: 903, y: 384}
   m_SizeDelta: {x: 1806, y: 768}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1581216984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581216979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99a83c5d1966854299732b585684fab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BannerIzq: {fileID: 1879707630}
-  BannerDer: {fileID: 850514788}
-  BannerFondoDer: {fileID: 1053262320}
-  BannerFondoIzq: {fileID: 618444711}
-  PantallaFondo: {fileID: 895316969}
 --- !u!1 &1734618507
 GameObject:
   m_ObjectHideFlags: 0
