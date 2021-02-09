@@ -3948,7 +3948,6 @@ GameObject:
   - component: {fileID: 728401535}
   - component: {fileID: 728401534}
   - component: {fileID: 728401533}
-  - component: {fileID: 728401537}
   - component: {fileID: 728401538}
   m_Layer: 5
   m_Name: Canvas
@@ -4038,41 +4037,6 @@ RectTransform:
   m_AnchoredPosition: {x: 683, y: 384}
   m_SizeDelta: {x: 1366, y: 768}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!328 &728401537
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728401532}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: f95c8899293928d43bcfe81215dba1e1, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
 --- !u!114 &728401538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4085,18 +4049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a23c002d41f6468453758593eba3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  banner1: {fileID: 1379809843}
-  banner2: {fileID: 811045970}
-  banner3: {fileID: 1097497719}
-  banner4: {fileID: 1150190541}
-  nombre_logo: {fileID: 750698922}
-  nombre_logo1: {fileID: 1584227865}
-  nombre_logo2: {fileID: 1376531059}
-  logo1: {fileID: 1742349537}
-  logoexpomype1: {fileID: 832538967}
-  logoexpomype2: {fileID: 1222056750}
-  recepcionista: {fileID: 1305708181}
-  banderin1: {fileID: 1226564201}
 --- !u!1 &750698920
 GameObject:
   m_ObjectHideFlags: 0
@@ -6618,18 +6570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a23c002d41f6468453758593eba3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  banner1: {fileID: 0}
-  banner2: {fileID: 0}
-  banner3: {fileID: 0}
-  banner4: {fileID: 0}
-  nombre_logo: {fileID: 0}
-  nombre_logo1: {fileID: 0}
-  nombre_logo2: {fileID: 0}
-  logo1: {fileID: 0}
-  logoexpomype1: {fileID: 0}
-  logoexpomype2: {fileID: 0}
-  recepcionista: {fileID: 0}
-  banderin1: {fileID: 0}
 --- !u!1 &1295999621
 GameObject:
   m_ObjectHideFlags: 0
