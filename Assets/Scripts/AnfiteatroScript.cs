@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 using System.Runtime.InteropServices;
 using System;
 using System.IO;
-public class AnfiteatroScript : baseMostrarBanners
+public class AnfiteatroScript : baseScript1
 {
     // Start is called before the first frame update
     void Start()
@@ -46,7 +46,7 @@ public class AnfiteatroScript : baseMostrarBanners
                 cargarImagen(anfiteatro.PantallaFondo, this.PantallaFondo );
                
 
-                var imagenes = this.GetChildImagenes("Canvas");
+                var imagenes = this.GetChildImagenes("Icono Estas Aqui");
                 if (imagenes.Length > 0) {
                     int t = (int)DateTime.Now.Ticks;
                     UnityEngine.Random.InitState( t );

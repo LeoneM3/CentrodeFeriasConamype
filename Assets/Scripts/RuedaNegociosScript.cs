@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using System;
-public class RuedaNegociosScript : baseMostrarBanners
+public class RuedaNegociosScript : baseScript1
 {
     
     void Start()
@@ -41,12 +41,14 @@ public class RuedaNegociosScript : baseMostrarBanners
               var json_text = req.downloadHandler.text;
               RuedaNegocios anfiteatro = JsonUtility.FromJson<RuedaNegocios>(json_text);                     
               cargarImagen(anfiteatro.Banner1, this.Banner1 );
-              cargarImagen(anfiteatro.Banner2, this.Banner2 );
-              cargarImagen(anfiteatro.Banner3, this.Banner3 );
-              cargarImagen(anfiteatro.Banner4, this.Banner4 );
-              cargarImagen(anfiteatro.Banner5, this.Banner5 );
-              cargarImagen(anfiteatro.Banner6, this.Banner6 );
-              cargarImagen(anfiteatro.Banner7, this.Banner7 );
+              cargarImagen(anfiteatro.Banner1, this.Banner2 );
+
+              cargarImagen(anfiteatro.Banner2, this.Banner3 );
+              cargarImagen(anfiteatro.Banner2, this.Banner4 );
+              cargarImagen(anfiteatro.Banner3, this.Banner5 );
+              cargarImagen(anfiteatro.Banner4, this.Banner6 );
+              cargarImagen(anfiteatro.Banner5, this.Banner7 );
+
 
                var imagenes = this.GetChildImagenes("Canvas");
                 if (imagenes.Length > 0) {
@@ -80,8 +82,6 @@ public class RuedaNegociosScript : baseMostrarBanners
         public string Banner3;
         public string Banner4;
         public string Banner5;
-        public string Banner6;
-        public string Banner7;
         public string Icono;
 
     }

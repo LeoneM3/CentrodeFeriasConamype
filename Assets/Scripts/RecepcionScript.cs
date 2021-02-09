@@ -2,7 +2,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.Networking;
 using System;
-public class RecepcionScript : baseMostrarBanners
+public class RecepcionScript : baseScript1
 {
     
     public RawImage recepcionista1;
