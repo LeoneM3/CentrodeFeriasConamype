@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Fachada/Scena/Fachada.unity
     guid: 0611c65928f38f24d9899037c5632f6b
+  - enabled: 1
+    path: Assets/Stands/Stand 2/Scenes/stand mediano.unity
+    guid: 4d5d4040d7c1a9e439af7234c143b021
   m_configObjects: {}
