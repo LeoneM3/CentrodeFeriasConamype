@@ -757,7 +757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recepcionista1: {fileID: 1216963425}
   recepcionista2: {fileID: 1552684036}
-  banner1: {fileID: 0}
+  banner1: {fileID: 1295215734}
   banner2: {fileID: 2040283714}
   PublicidadVert1: {fileID: 439983951}
   PublicidadVert2: {fileID: 384377504}
