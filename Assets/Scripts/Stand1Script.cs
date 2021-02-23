@@ -65,9 +65,9 @@ public class Stand1Script : baseScript2
     {
         
     }
-    public override void ImagenDB(string parameters)
+    public override void ImagenDB(string config)
     {
-        base.ImagenDB(parameters);
+        base.ImagenDB(config);
     }
 
     // Update is called once per frame

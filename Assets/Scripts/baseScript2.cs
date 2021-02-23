@@ -108,17 +108,17 @@ public class baseScript2 : MonoBehaviour
             
         }));
     }
-    public virtual void ImagenDB(string parameters)
+    public virtual void ImagenDB(string configJson)
     {
       
-        string path = Application.dataPath.Split('/')[3];
-        string config = "";
-         StartCoroutine(JsonRequest("/" + path + "/unity-conf/conf.json?" + DateTime.Now.ToString("yyyyMMddhhmmss"), (UnityWebRequest reqconf) => {
-             config = reqconf.downloadHandler.text;
-             Debug.Log(config);
-        ObjectMyConfig myConfig = JsonUtility.FromJson<ObjectMyConfig>(config);
+       // string path = Application.dataPath.Split('/')[3];
+        /* StartCoroutine(JsonRequest("/" + path + "/unity-conf/conf.json?" + DateTime.Now.ToString("yyyyMMddhhmmss"), (UnityWebRequest reqconf) => {*/
+             //config = reqconf.downloadHandler.text;
+         Debug.Log(configJson);
+        ObjectMyConfig myConfig = JsonUtility.FromJson<ObjectMyConfig>(configJson);
         string webservice = myConfig.estand.Replace("timespan", DateTime.Now.ToString("yyyyMMddhhmmss"));
-        StartCoroutine(JsonRequest(webservice + parameters, (UnityWebRequest req) =>
+        string parametros = myConfig.parametros;
+        StartCoroutine(JsonRequest(webservice + parametros, (UnityWebRequest req) =>
     {
         if (req.result == UnityWebRequest.Result.ConnectionError)
         {
@@ -128,7 +128,7 @@ public class baseScript2 : MonoBehaviour
         {
             try
             {
-                ConstruirCentroFeria( myConfig.centro_ferias_eventos + parameters );
+                ConstruirCentroFeria( myConfig.centro_ferias_eventos + parametros );
             }
             catch (System.Exception e)
             {
@@ -278,7 +278,7 @@ public class baseScript2 : MonoBehaviour
 
             }
         }));
-         }));
+        /* }));*/
  
     }
 
@@ -361,6 +361,7 @@ public class ObjectCentroFerias
 [System.Serializable]
 public class ObjectMyConfig
 {
+    public string parametros;
     public string estand;
     public string centro_ferias_eventos;
 }
