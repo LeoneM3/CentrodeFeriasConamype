@@ -3392,9 +3392,9 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 12.41
-  m_Range: 10.2
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Range: 10.98
+  m_SpotAngle: 34
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -5359,7 +5359,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540064151}
   m_Enabled: 1
-  m_VideoClip: {fileID: 0}
+  m_VideoClip: {fileID: 32900000, guid: be236948ec374104c803ec7a973f3278, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -5378,7 +5378,7 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
@@ -5457,7 +5457,7 @@ Transform:
   m_GameObject: {fileID: 1540064151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.55, y: 7.97, z: 0.97}
-  m_LocalScale: {x: 3.0584517, y: -2.1856039, z: 0.022526}
+  m_LocalScale: {x: -2.9384074, y: -2.1856039, z: 0.022526}
   m_Children:
   - {fileID: 834882346}
   m_Father: {fileID: 0}
