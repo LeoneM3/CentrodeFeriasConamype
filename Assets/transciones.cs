@@ -8,7 +8,6 @@ public void CambiarEscena(string nombre){
 
     print("Cambiando a la escena " + nombre);
     SceneManager.LoadScene(nombre);
-}
-   
+}   
    
 }
