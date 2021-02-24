@@ -250,8 +250,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -661.44, y: -370.49}
-  m_SizeDelta: {x: 3.0858202, y: 3.1499634}
+  m_AnchoredPosition: {x: -659.13, y: -370.26}
+  m_SizeDelta: {x: 2.3343544, y: 2.0752563}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301284685
 MonoBehaviour:
@@ -305,7 +305,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Stand 1
+          m_StringArgument: Stand 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &301284686
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e75e18f65321934fb612740c0ccc500, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4fb250b517457b641809f5fbc1b21cf7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -502,7 +502,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d4cd70282e47df44f8ccddb5f85c6174, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6475b9943c4a72848bc8d84d9d1d4fc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 1509769720}
   - component: {fileID: 1509769721}
   m_Layer: 0
-  m_Name: Cambio
+  m_Name: EsceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
