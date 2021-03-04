@@ -27,7 +27,9 @@ public class RecepcionScript : baseScript1
     {
         
     }
-
+    public void PlayVideo() {
+        base.BasePlayVideo( "PantallaVideo" );
+    }
     void ImagenDb(string url){
         #if !UNITY_EDITOR && UNITY_WEBGL
             WebGLInput.captureAllKeyboardInput = false;
@@ -50,8 +52,8 @@ public class RecepcionScript : baseScript1
                 }
                 cargarImagen(centroEventos.Edecanes[n1].url, this.recepcionista1 );
                 cargarImagen(centroEventos.Edecanes[n2].url, this.recepcionista2 );
-                cargarImagen(centroEventos.BannerExpoHorz, this.Pantalla );
-
+               // cargarImagen(centroEventos.BannerExpoHorz, this.Pantalla );
+                cargarVideo( "PantallaVideo", centroEventos.FondoPantalla );
                 cargarImagen(centroEventos.Banner1, this.banner1 );
                 cargarImagen(centroEventos.Banner2, this.banner2 );
                 cargarImagen(centroEventos.PublicidadVert1, this.PublicidadVert1 );
@@ -90,6 +92,7 @@ public class Edecane
         public string PublicidadVert4;
         public string Banderin1;
         public string Banderin2;
+        public string FondoPantalla;
         public Edecane[] Edecanes ;
     }
 

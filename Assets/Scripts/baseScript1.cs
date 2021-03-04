@@ -8,7 +8,23 @@ public class baseScript1 : MonoBehaviour
 {
     
 
-    
+    public void BasePlayVideo(string rutaObjeto) {
+         GameObject cubo = GameObject.Find(rutaObjeto);
+
+         var reproductor = cubo.transform.GetComponent<UnityEngine.Video.VideoPlayer>();
+         reproductor.Play();
+    }
+    public void cargarVideo( string rutaObjeto, string urlVideo ) {
+          GameObject cubo = GameObject.Find(rutaObjeto);
+
+         var reproductor = cubo.transform.GetComponent<UnityEngine.Video.VideoPlayer>();
+         reproductor.source = UnityEngine.Video.VideoSource.Url;
+         reproductor.url = urlVideo;
+         reproductor.SetDirectAudioMute( 0, true );
+         reproductor.isLooping  = true;
+         reproductor.playOnAwake = true;
+         reproductor.Play();
+    }
 
     public RawImage[] GetChildImagenes(string ruta) {
          RawImage[] imagenes = {};

@@ -62,7 +62,9 @@ public class Stand3Script : baseScript2
     {
       return this.GetChildImagenes("Canvas/Img Raw/productos");
     }
-
+    public void EventoClick() {
+        Debug.Log("prueba");
+    }
     public override RawImage[] ProductosEstrellas()
     {
          return this.GetChildImagenes("Canvas/Img Raw/productosEstrellas");
