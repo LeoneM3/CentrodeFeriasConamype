@@ -1600,7 +1600,7 @@ PrefabInstance:
     - target: {fileID: 2135065582684491138, guid: 7e42dcabf06103d4fa72997f99585af6, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 32900000, guid: c7af11c81b73680418e8b26a407b7cb0, type: 3}
     - target: {fileID: 2135065582684491138, guid: 7e42dcabf06103d4fa72997f99585af6, type: 3}
       propertyPath: m_DataSource
       value: 1
@@ -1611,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2135065582684491142, guid: 7e42dcabf06103d4fa72997f99585af6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.2217693
+      value: -5.2849526
       objectReference: {fileID: 0}
     - target: {fileID: 2135065582684491142, guid: 7e42dcabf06103d4fa72997f99585af6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1696,7 +1696,6 @@ MonoBehaviour:
   BannerDer: {fileID: 850514788}
   BannerFondoDer: {fileID: 1053262320}
   BannerFondoIzq: {fileID: 618444711}
-  PantallaFondo: {fileID: 0}
 --- !u!4 &1559362404
 Transform:
   m_ObjectHideFlags: 0
