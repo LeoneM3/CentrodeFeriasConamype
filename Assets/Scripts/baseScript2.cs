@@ -53,8 +53,13 @@ public class baseScript2 : MonoBehaviour
                     if (total > 0) {
                     imagenes= new RawImage[total];
                     for (int i  = 0; i < total; i++) {
-                            var imagen = child.transform.GetChild(i).GetComponent<RawImage>(); // imagenes[i].GetComponent<RawImage>();
-                            imagenes[i] = imagen;
+                            if ( child.transform.GetChild(i).name.Contains("producto")  ) {
+                                var imagen = child.transform.GetChild(i).GetComponent<RawImage>(); // imagenes[i].GetComponent<RawImage>();
+                                if (imagen != null) {
+                                        imagenes[i] = imagen;
+                                }
+                            }
+                     
                         }
                 }
             }
@@ -110,8 +115,9 @@ public class baseScript2 : MonoBehaviour
     }
     public virtual void ImagenDB(string configJson)
     {
-      
-       // string path = Application.dataPath.Split('/')[3];
+      try
+      {
+           // string path = Application.dataPath.Split('/')[3];
         /* StartCoroutine(JsonRequest("/" + path + "/unity-conf/conf.json?" + DateTime.Now.ToString("yyyyMMddhhmmss"), (UnityWebRequest reqconf) => {*/
              //config = reqconf.downloadHandler.text;
          Debug.Log(configJson);
@@ -172,33 +178,38 @@ public class baseScript2 : MonoBehaviour
             Debug.Log("lista de imagenes " + Imagenes.Length);
 
             /*creacion de los banners**/
-            if (!string.IsNullOrWhiteSpace(list.Banner1) && Banner1() != null) {
+            cargarImagen(list.Banner1 , Banner1()  );
+            cargarImagen(list.Banner2 , Banner2()  );
+            cargarImagen(list.Banner3 , Banner3()  );
+            cargarImagen(list.Banner4 , Banner4()  );
+            /*if (!string.IsNullOrWhiteSpace(list.Banner1) && Banner1() != null) {
                     StartCoroutine(ImagenRequest(list.Banner1, (UnityWebRequest req1) => {
                             Banner1().texture = DownloadHandlerTexture.GetContent(req1);
                     }));
-            }
-           if (!string.IsNullOrWhiteSpace(list.Banner2) && Banner2() != null) {
+            }*/
+          /* if (!string.IsNullOrWhiteSpace(list.Banner2) && Banner2() != null) {
                     StartCoroutine(ImagenRequest(list.Banner2, (UnityWebRequest req1) => {
                             Banner2().texture = DownloadHandlerTexture.GetContent(req1);
                     }));
-            }
-            if (!string.IsNullOrWhiteSpace(list.Banner3) && Banner3() != null) {
+            }*/
+            /*if (!string.IsNullOrWhiteSpace(list.Banner3) && Banner3() != null) {
                     StartCoroutine(ImagenRequest(list.Banner3, (UnityWebRequest req1) => {
                             Banner3().texture = DownloadHandlerTexture.GetContent(req1);
                     }));
-            }
+            }*/
 
-             if (!string.IsNullOrWhiteSpace(list.Banner4) && Banner4() != null) {
+             /*if (!string.IsNullOrWhiteSpace(list.Banner4) && Banner4() != null) {
                     StartCoroutine(ImagenRequest(list.Banner4, (UnityWebRequest req1) => {
                             Banner4().texture = DownloadHandlerTexture.GetContent(req1);
                     }));
-            }
+            }*/
             /**creacion del logo*/
-             if (!string.IsNullOrWhiteSpace(list.logo) && Logo() != null) {
+                   cargarImagen(list.logo , Logo()  );
+            /* if (!string.IsNullOrWhiteSpace(list.logo) && Logo() != null) {
                     StartCoroutine(ImagenRequest(list.logo, (UnityWebRequest req1) => {
                             Logo().texture = DownloadHandlerTexture.GetContent(req1);
                     }));
-            }
+            }*/
 
               if (!string.IsNullOrWhiteSpace(list.nombre_logo) && Nombre_logo() != null) {
                     StartCoroutine(ImagenRequest(list.nombre_logo, (UnityWebRequest req1) => {
@@ -219,9 +230,10 @@ public class baseScript2 : MonoBehaviour
                 RawImage[] logos = Logos();
                 for (int i = 0, len = logos.Length; i < len; i++) {
                     RawImage logo = logos[i];
-                    StartCoroutine(ImagenRequest(list.logo, (UnityWebRequest req1) => {
+                    cargarImagen( list.logo, logo  );
+                    /*StartCoroutine(ImagenRequest(list.logo, (UnityWebRequest req1) => {
                               logo.texture = DownloadHandlerTexture.GetContent(req1);
-                    }));
+                    }));*/
                 }
             }
             /**productos estrellas**/
@@ -229,20 +241,22 @@ public class baseScript2 : MonoBehaviour
                   RawImage imagen = ProductosEstrellas[i];
                     if (i <= 3) {
                         string url = pestrellas[i].url;
-                        if (!string.IsNullOrEmpty(url)) {
+                        cargarImagen( url, imagen );
+                        /*if (!string.IsNullOrEmpty(url)) {
                             StartCoroutine(ImagenRequest(url, (UnityWebRequest req1) => {
                             imagen.texture = DownloadHandlerTexture.GetContent(req1);
                             }));
-                        }
+                        }*/
                     } else {
                         UnityEngine.Random.InitState( i + DateTime.Now.Millisecond );
                         int n = UnityEngine.Random.Range(0, 4);
                         string url = pestrellas[n].url;
-                        if (!string.IsNullOrEmpty(url)) {
+                        cargarImagen( url, imagen );
+                        /*if (!string.IsNullOrEmpty(url)) {
                             StartCoroutine(ImagenRequest(url, (UnityWebRequest req1) => {
                             imagen.texture = DownloadHandlerTexture.GetContent(req1);
                             }));
-                        }
+                        }*/
                     }
             }
             /**imagenes de productos**/
@@ -252,20 +266,22 @@ public class baseScript2 : MonoBehaviour
                     RawImage imagen = Imagenes[i];
                     if (i <= 2) {
                         string url = data[i].url;
-                        if (!string.IsNullOrEmpty(url)) {
+                        cargarImagen( url, imagen );
+                        /*if (!string.IsNullOrEmpty(url)) {
                             StartCoroutine(ImagenRequest(url, (UnityWebRequest req1) => {
                             imagen.texture = DownloadHandlerTexture.GetContent(req1);
                             }));
-                        }
+                        }*/
                     } else {
                         UnityEngine.Random.InitState( i + DateTime.Now.Millisecond );
                         int n = UnityEngine.Random.Range(0, 3);
                         string url = data[n].url;
-                        if (!string.IsNullOrEmpty(url)) {
+                        cargarImagen( url, imagen );
+                        /*if (!string.IsNullOrEmpty(url)) {
                             StartCoroutine(ImagenRequest(url, (UnityWebRequest req1) => {
                             imagen.texture = DownloadHandlerTexture.GetContent(req1);
                             }));
-                        }
+                        }*/
                     }
                     
                 }
@@ -279,6 +295,13 @@ public class baseScript2 : MonoBehaviour
             }
         }));
         /* }));*/
+      }
+      catch (System.Exception ex) 
+      {
+          
+        Debug.Log( ex.Message + " " + ex.Source );
+      }
+      
  
     }
 
