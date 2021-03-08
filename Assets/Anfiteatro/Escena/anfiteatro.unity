@@ -1696,7 +1696,7 @@ MonoBehaviour:
   BannerDer: {fileID: 850514788}
   BannerFondoDer: {fileID: 1053262320}
   BannerFondoIzq: {fileID: 618444711}
-  PantallaFondo: {fileID: 895316969}
+  PantallaFondo: {fileID: 0}
 --- !u!4 &1559362404
 Transform:
   m_ObjectHideFlags: 0
