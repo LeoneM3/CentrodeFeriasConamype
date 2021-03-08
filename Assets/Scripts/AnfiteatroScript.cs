@@ -16,7 +16,6 @@ public class AnfiteatroScript : baseScript1
     public RawImage BannerDer;
     public RawImage BannerFondoDer;
     public RawImage BannerFondoIzq;
-    public RawImage PantallaFondo;
 
     // Update is called once per frame
     void Update()
@@ -43,8 +42,8 @@ public class AnfiteatroScript : baseScript1
                 cargarImagen(anfiteatro.BannerIzq, this.BannerIzq );
                 cargarImagen(anfiteatro.BannerFondoIzq, this.BannerFondoIzq );
                 cargarImagen(anfiteatro.BannerFondoDer, this.BannerFondoDer );
-                cargarImagen(anfiteatro.PantallaFondo, this.PantallaFondo );
-               
+               // cargarImagen(anfiteatro.PantallaFondo, this.PantallaFondo );
+               cargarVideo( "Banners de fondo/Pantalla 1", anfiteatro.PantallaFondo );
 
                 var imagenes = this.GetChildImagenes("Icono Estas Aqui");
                 if (imagenes.Length > 0) {
