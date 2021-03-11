@@ -32,10 +32,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Stands/Pantalla/Escena/Pantalla2.unity
     guid: 562b8fe3046d34f4391fdc07b8790e32
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stands/Stand 3/Scenes/Stand 3.unity
     guid: bb0bd575ed08190478251582ace93d3c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stands/Pantalla/Escena/Pantalla3.unity
     guid: e4d058c0117b41240a5f0064462e6d02
   m_configObjects: {}
