@@ -60,14 +60,14 @@ public class Stand3Script : baseScript2
     /* Funcion que retorna las imagenes**/
     public override RawImage[] Imagenes()
     {
-      return this.GetChildImagenes("Canvas/Img Raw/productos");
+      return this.GetChildImagenes("Canvas/productos");
     }
     public void EventoClick() {
         Debug.Log("prueba");
     }
     public override RawImage[] ProductosEstrellas()
     {
-         return this.GetChildImagenes("Canvas/Img Raw/productosEstrellas");
+         return this.GetChildImagenes("Canvas/productosEstrellas");
     }
     public override RawImage Logoexpomype1()
     {

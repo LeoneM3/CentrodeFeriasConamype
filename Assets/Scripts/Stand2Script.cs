@@ -35,11 +35,11 @@ public class Stand2Script : baseScript2
     /* Funcion que retorna las imagenes**/
      public override RawImage[] Imagenes()
     {
-      return this.GetChildImagenes("Canvas/RAW img/productos");
+      return this.GetChildImagenes("Canvas/productos");
     }
     public override RawImage[] ProductosEstrellas()
     {
-         return this.GetChildImagenes("Canvas/RAW img/productosEstrellas");
+         return this.GetChildImagenes("Canvas/productosEstrellas");
     }
     /* LOGO EXPOMYPE 1**/
     public override RawImage Logoexpomype1()
