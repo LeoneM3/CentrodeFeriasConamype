@@ -465,7 +465,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213957109}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.39999962}
+  m_LocalPosition: {x: 0, y: 0, z: 1.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 728401536}
@@ -473,8 +473,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -695.08307, y: -372.21}
-  m_SizeDelta: {x: 1.3624282, y: 6.635396}
+  m_AnchoredPosition: {x: -694.27423, y: -371.3219}
+  m_SizeDelta: {x: 1.3139338, y: 6.3992147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213957111
 MonoBehaviour:
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 20b1da37b3858714d90a025b26e50f55, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2093,8 +2093,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551701498}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.371, y: 53, z: -36.4}
-  m_LocalScale: {x: 3.0029817, y: 3.6182961, z: 2.928803}
+  m_LocalPosition: {x: 26.01, y: 53, z: -36.4}
+  m_LocalScale: {x: 2.8536794, y: 3.6182961, z: 2.928803}
   m_Children: []
   m_Father: {fileID: 996586491}
   m_RootOrder: 0
@@ -4164,7 +4164,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101247989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.4}
+  m_LocalPosition: {x: 0, y: 0, z: 1.0800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 728401536}
@@ -4172,7 +4172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -664.222, y: -372.23}
+  m_AnchoredPosition: {x: -663.79, y: -371.35}
   m_SizeDelta: {x: 1.3593762, y: 6.627206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101247991
@@ -4195,7 +4195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 20b1da37b3858714d90a025b26e50f55, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
