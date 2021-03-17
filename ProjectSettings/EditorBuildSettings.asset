@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Fachada/Scena/Fachada.unity
     guid: 0611c65928f38f24d9899037c5632f6b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Pabellon/Escena/Pabellon.unity
     guid: 313b9b3e60854234481c2af28fb66467
   - enabled: 0
@@ -26,10 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Stands/Pantalla/Escena/Pantalla1.unity
     guid: 141d85e42fc991b40aea0f84d4e21d57
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stands/Stand 2/Scenes/Stand 2.unity
     guid: 4d5d4040d7c1a9e439af7234c143b021
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stands/Pantalla/Escena/Pantalla2.unity
     guid: 562b8fe3046d34f4391fdc07b8790e32
   - enabled: 0
