@@ -2116,10 +2116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc6710af5c33e5468368c94e6c8c5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Banner1: {fileID: 0}
-  Banner2: {fileID: 0}
-  Banner3: {fileID: 0}
-  Logo: {fileID: 0}
+  Banner1: {fileID: 39911509}
+  Banner2: {fileID: 504759845}
+  Banner3: {fileID: 1002877686}
+  Logo: {fileID: 987069116}
 --- !u!1 &1712772923
 GameObject:
   m_ObjectHideFlags: 0
